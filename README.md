@@ -8,18 +8,21 @@ STeps to reporduce solution for 3rd place:
 
 Dependencies:
 
-  python >= 3.6
+    python >= 3.6
 
-  numpy >= 1.14.2
+    numpy >= 1.14.2
 
-  pandas >= 0.23.4
+    pandas >= 0.23.4
 
-  scipy >= 1.1.0
+    scipy >= 1.1.0
 
-  sklearn >= 0.20.0
+    sklearn >= 0.20.0
 
-  numba >= 0.36.2
+    numba >= 0.36.2
 
-  lightgbm >= 2.1.2
-
+    lightgbm >= 2.1.2
+    
+    keras == 2.2.0
+    
+    tensorflow == 1.8.0
 
