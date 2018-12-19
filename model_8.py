@@ -81,6 +81,11 @@ def main():
     train2.columns = cols_new
     test2.columns = cols_new
 
+    tr2 = pd.merge(tr2, tr22, on="id")
+    val2 = pd.merge(val2, val22, on="id")
+    train = pd.merge(train, train2, on="id")
+    test = pd.merge(test, test2, on="id")
+
     print(tr2.shape, val2.shape, train.shape, test.shape)
 
     tr2["week_year"] = tr2["week"] % 52
