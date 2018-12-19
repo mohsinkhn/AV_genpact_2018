@@ -222,8 +222,8 @@ def main():
     y_preds_all = np.mean(y_preds_all, axis=0)
     print("Validation RMSE for NN model ", rmse(y_val, y_preds_all))
 
-    X_train = split_features(train.loc[train.week > 1])
-    X_test = split_features(test)
+    X_train = split_features(train.loc[train.week > 1], cont_feats, bin_feats)
+    X_test = split_features(test, cont_feats, bin_feats)
 
     y_train = np.log1p(train.loc[train.week > 1, "num_orders"])
 
